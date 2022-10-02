@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appNavGraph"
+    app:startDestination="@id/notesFragment">
+
+    <action
+        android:id="@+id/navigateToNotesScreen"
+        app:destination="@+id/notesFragment" />
+
+    <action
+        android:id="@+id/navigateToAddNoteScreen"
+        app:destination="@+id/addNoteFragment" />
+
+    <action
+        android:id="@+id/navigateToNoteDetailsScreen"
+        app:destination="@+id/noteDetailsFragment" />
+
+    <action
+        android:id="@+id/navigateToUpdateNoteScreen"
+        app:destination="@+id/updateNoteFragment" />
+
+    <action
+        android:id="@+id/navigateToDeleteNoteScreen"
+        app:destination="@+id/deleteNoteFragment" />
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.olehvynnytskyi.notes.presentation.notes.NotesFragment"
+        android:label="NotesFragment"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.olehvynnytskyi.notes.presentation.add_note.AddNoteFragment"
+        android:label="AddNoteFragment"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
+        android:id="@+id/noteDetailsFragment"
+        android:name="com.olehvynnytskyi.notes.presentation.note_details.NoteDetailsFragment"
+        android:label="NoteDetailsFragment"
+        tools:layout="@layout/fragment_note_details">
+        <argument
+            android:name="note"
+            app:argType="com.olehvynnytskyi.notes.domain.model.Note" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/deleteNoteFragment"
+        android:name="com.olehvynnytskyi.notes.presentation.delete_note.DeleteNoteFragment"
+        android:label="DeleteNoteFragment"
+        tools:layout="@layout/fragment_delete_note">
+
+        <argument
+            android:name="note"
+            app:argType="com.olehvynnytskyi.notes.domain.model.Note" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/updateNoteFragment"
+        android:name="com.olehvynnytskyi.notes.presentation.update_note.UpdateNoteFragment"
+        android:label="UpdateNoteFragment"
+        tools:layout="@layout/fragment_update_note">
+        <argument
+            android:name="note"
+            app:argType="com.olehvynnytskyi.notes.domain.model.Note" />
+    </dialog>
+
+</navigation>

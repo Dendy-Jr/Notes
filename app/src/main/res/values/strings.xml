@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Notes</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="color">Color</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="save_note">Save note</string>
+    <string name="type_something">Type something…</string>
+    <string name="delete_note_question">Are you sure you want to delete the note?</string>
+    <string name="update_note_question">Are you sure you want to update the note?</string>
+    <string name="discard">Discard</string>
+    <string name="delete">Delete</string>
+    <string name="title_note_empty">The title of the note can\'t be empty.</string>
+    <string name="update">Update</string>
 </resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color -->
+    <attr name="colorWhite" format="color" />
+    <attr name="colorBlack" format="color" />
+    <attr name="colorGray" format="color" />
+    <attr name="colorDarkGray" format="color" />
+    <attr name="colorEerieBlack" format="color" />
+    <attr name="colorRed" format="color" />
+    <attr name="colorGreen" format="color" />
+    <attr name="colorYellow" format="color" />
+    <attr name="colorBlue" format="color" />
+    <attr name="colorPink" format="color" />
+    <attr name="colorOrange" format="color" />
+
+    <!-- Font -->
+    <attr name="fontRobotoRegular" format="reference" />
+    <attr name="fontRobotoMedium" format="reference" />
+    <attr name="fontRobotoBold" format="reference" />
+</resources>

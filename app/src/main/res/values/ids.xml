@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="navContainer" type="id" />
+    <item name="appNavGraph" type="id" />
+    <item name="backNavDirection" type="id" />
+</resources>

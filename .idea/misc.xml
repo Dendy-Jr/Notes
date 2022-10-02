@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable-v24/ac_add.xml" value="0.153" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable-v24/ic_arrow.xml" value="0.2015" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable-v24/ic_save.xml" value="0.2015" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable-v24/ic_warning.xml" value="0.2015" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable/bg_dialog.xml" value="0.2015" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable/bg_note.xml" value="0.2015" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable/bg_toolbar_item.xml" value="0.2015" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_add.xml" value="0.197" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_delete.xml" value="0.197" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/drawable/ic_notebook.xml" value="0.2015" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/font/roboto_bold.xml" value="0.284375" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/font/roboto_medium.xml" value="0.284375" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/font/roboto_reqular.xml" value="0.284375" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/layout-v28/fragment_add.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/layout/fragment_add.xml" value="0.176" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/layout/fragment_delete_note.xml" value="0.264" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/layout/fragment_note_details.xml" value="0.23238095238095238" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/layout/fragment_notes.xml" value="0.264" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/layout/item_note.xml" value="0.264" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/layout/toolbar.xml" value="0.4" />
+        <entry key="..\:/Users/Oleh/AndroidStudioProjects/Notes/app/src/main/res/mipmap-anydpi-v26/ic_add.xml" value="0.1555" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

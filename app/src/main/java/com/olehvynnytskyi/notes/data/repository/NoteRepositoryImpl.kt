@@ -24,6 +24,12 @@ class NoteRepositoryImpl @Inject constructor(
         }
     }
 
+    override fun searchNotes(search: String): Flow<List<Note>> {
+        return dao.searchNotes(search).map {
+            it.toDomain()
+        }
+    }
+
     override suspend fun getNoteById(id: Int): Note {
         return dao.getNoteById(id).toDomain()
     }

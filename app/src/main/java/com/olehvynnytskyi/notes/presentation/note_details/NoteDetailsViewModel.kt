@@ -28,8 +28,8 @@ class NoteDetailsViewModel @Inject constructor(
 
     fun onActionClicked(title: String, content: String) {
         note.value?.copy(
-            title = title,
-            content = content
+            title = title.trim(),
+            content = content.trim()
         )?.let {
             navigateTo(appNavDirections.updateNoteScreen(it))
         }

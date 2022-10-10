@@ -10,6 +10,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import kotlinx.serialization.json.Json
 import javax.inject.Singleton
 
 @Module
@@ -18,17 +19,22 @@ class AppModule {
 
     @Provides
     @Singleton
+    fun json(): Json = Json {
+        encodeDefaults = true
+        ignoreUnknownKeys = true
+        isLenient = true
+    }
+
+    @Provides
+    @Singleton
     fun provideNoteDatabase(app: Application): NoteDatabase {
         return Room.databaseBuilder(
-            app,
-            NoteDatabase::class.java,
-            NoteDatabase.DATABASE_NAME
+            app, NoteDatabase::class.java, NoteDatabase.DATABASE_NAME
         ).allowMainThreadQueries().build()
     }
 
     @Provides
-    fun provideNoteDao(db: NoteDatabase): NoteDao =
-        db.noteDao
+    fun provideNoteDao(db: NoteDatabase): NoteDao = db.noteDao
 
     @Provides
     @Singleton
@@ -38,6 +44,7 @@ class AppModule {
             getNote = GetNoteUseCase(repository),
             addNote = AddNoteUseCase(repository),
             updateNote = UpdateNoteUseCase(repository),
+            searchNotes = SearchNotesUseCase(repository),
             deleteNote = DeleteNoteUseCase(repository)
         )
     }

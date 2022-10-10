@@ -1,6 +1,7 @@
 package com.olehvynnytskyi.notes.presentation.notes
 
 import androidx.core.view.isVisible
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.olehvynnytskyi.notes.R
@@ -32,6 +33,10 @@ class NotesFragment : BaseFragment<NotesViewModel, FragmentNotesBinding>(R.layou
 
         btnAddNote.setOnClickListener {
             viewModel.onAddClicked()
+        }
+
+        editText.addTextChangedListener {
+            viewModel.searchNotes(it.toString())
         }
 
         collectWithLifecycle(viewModel.state) { noteState ->

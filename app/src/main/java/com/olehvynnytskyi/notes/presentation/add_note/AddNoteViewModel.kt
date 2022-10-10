@@ -39,8 +39,8 @@ class AddNoteViewModel @Inject constructor(
             noteUseCases.addNote(
                 Note(
                     id = 0,
-                    title = title,
-                    content = content,
+                    title = title.trim(),
+                    content = content.trim(),
                     date = dateFormatter.format(System.currentTimeMillis()),
                     color = color
                 )
